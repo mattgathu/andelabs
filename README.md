@@ -1,6 +1,10 @@
-## Andela Labs
+# Andela Labs
+
+[![Build Status](https://travis-ci.org/mattgathu/andelabs.svg?branch=master)](https://travis-ci.org/mattgathu/andelabs)
 
 This repository contains [Andela code labs exercises](http://labs.andela.com)
+
+## Overview
 
 ### Data type Lab
 
@@ -151,3 +155,54 @@ class Car(object):
 
         return self
 ```
+
+## Getting started
+
+These instructions will get you a copy of the project up and running on 
+your local machine for development and testing purposes.
+
+```
+git clone https://github.com/mattgathu/andelabs.git
+```
+
+### Prerequisites
+
+You need to have [Python](https://www.python.org/downloads/) installed.
+
+## Running the tests
+
+To run the automated tests for this project
+
+### Using [nose](http://nose.readthedocs.io/en/latest/)
+
+Installing nose
+
+```
+pip install nose
+```
+
+Running tests
+
+```
+nosetests
+```
+
+### Using Python
+
+You can run tests using Python by executing `python tests_module.py` e.g.
+
+```
+python carclass_tests.py
+```
+
+## Authors
+
+* **[Matt Gathu](https://github.com/mattgathu)** 
+
+## License
+
+This project is licensed under the MIT License.
+
+## Acknowledgments
+
+* Andela Bootcamp 14 Cohort
