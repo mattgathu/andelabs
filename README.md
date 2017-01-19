@@ -4,6 +4,14 @@
 
 This repository contains [Andela code labs exercises](http://labs.andela.com)
 
+* [Binary Search](#binary-search-lab)
+* [Car class](#car-class-lab)
+* [Data type](#data-type-lab)
+* [Fizz Buzz](#fizz-buzz-lab)
+* [Max Min](#max-min-lab)
+* [Missing Number](#missing-number-lab)
+* [Word Count](#word-count-lab)
+
 ## Overview
 
 ### Binary Search Lab
