@@ -12,6 +12,12 @@ This repository contains [Andela code labs exercises](http://labs.andela.com)
 * [Missing Number](#missing-number-lab)
 * [Word Count](#word-count-lab)
 
+Extra labs
+
+* [Factorial](#factorial-lab)
+* [Reverse String](#reverse-string-lab)
+* [String Length](#string-length-lab)
+
 ## Overview
 
 ### Binary Search Lab
@@ -344,6 +350,68 @@ class Car(object):
             self.speed = 77
 
         return self
+```
+
+
+### Factorial Lab
+
+**LAB** : Have a function factorial(number), take the number parameter been passed and return the factorial of it. 
+For example: if number is `4`, it should return `(4 * 3 * 2 * 1)` which is `24`.
+
+**file** : `factorial.py`
+
+**code snippet**
+
+```python
+def factorial(num):
+    """calculate num!
+
+    """
+    if num == 0 or num == 1:
+        return 1
+    return num * factorial(num - 1)
+```
+
+### String Length Lab
+
+**LAB** : You are presented with a string or a collection of strings
+Your function should return the length of the string, or strings in a list
+`['Fairy', 'tale']` should return `[5, 4]` `'C-sharp'` should return `[7]`
+
+**file** : `stringlength.py`
+
+**code snippet**
+
+```python
+def string_length(strings):
+    """calculate length of each string in strings
+
+    """
+    return [len(string) for string in strings] if isinstance(strings, list) else [len(strings)]
+```
+
+### Reverse String Lab
+
+**LAB** : You are to write a function, reverse_string(string), that returns 
+the reverse of the string provided. If the reverse of the string is the 
+same as the original string, as in the case of palindromes, return true instead.
+
+**file** : `reversestring.py`
+
+**code snippet**
+
+```python
+def reverse_string(string):
+    """reverse string
+    return True if palindrome
+
+    """
+    if not string:
+        return None
+
+    reversed_str = "".join(reversed(string))
+
+    return True if reversed_str == string else reversed_str
 ```
 
 ## Getting started
