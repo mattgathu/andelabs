@@ -128,6 +128,66 @@ def find_missing(list_one, list_two):
         return list(set(list_one).symmetric_difference(set(list_two)))[0]
 ```
 
+### Max Min Lab
+
+**LAB** : Define a function called find_max_min, that finds minimum and maximum values in a container.
+
+**file** : `maxmin.py`
+
+**code snippet**
+
+```python
+def find_max_min(data):
+    """find minimum and maximum values in a container
+    
+    args:
+        data (list): list or iterable
+        
+    returns:
+        list: [min_val, max_val] or [min_val or max_val]
+    """
+    # use internal functions to get min and max values
+    min_max = [min(data), max(data)]
+    
+    # check if min and max values are equal
+    if min(data) == max(data):
+        return [min(data)]
+    else:
+        return min_max
+```
+
+### Word Count Lab
+
+**LAB** : Define a function called word, that counts the occurrences of words in a text.
+
+**file** : `wordcount.py`
+
+**code snippet**
+
+```python
+def words(words_in):
+    """Counts the occurrences or characters in a word
+
+    """
+    # replace tabs and newline occurrences with spaces and split
+    # the string where spaces occur
+    words_list = words_in.replace('\n', ' ').replace('\t', ' ').split(' ')
+    # filter out spaces
+    words_list = [word for word in words_list if word]
+    # create a dictionary of words and the occurrence count using
+    # dictionary comprehension
+    words_count = {word: words_list.count(word) for word in set(words_list)}
+
+    # convert keys that are digits into integers
+    for key, val in words_count.items():
+        if isinstance(key, str) and key.isdigit():
+            words_count[int(key)] = val
+            words_count.pop(key)
+
+    # return dictionary
+    return words_count
+```
+
 ### Data type Lab
 
 
