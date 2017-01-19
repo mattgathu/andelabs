@@ -99,6 +99,35 @@ class BinarySearch(list):
 ```
 
 
+### Missing Number Lab
+
+**LAB** : You are presented with two arrays, all containing positive integers. One of the arrays will have one extra number, see below:
+
+ - [1,2,3] and [1,2,3,4] should return 4
+
+ - [4,66,7] and [66,77,7,4] should return 77
+
+**file** : `missingnumber.py`
+
+**code snippet**
+
+```python
+def find_missing(list_one, list_two):
+    """find_missing function
+
+    find the missing number between two lists
+    """
+    # check if both lists are empty
+    if len(list_one) == len(list_two) == 0:
+        return 0
+
+    # check if both lists are similar
+    if not set(list_one).symmetric_difference(set(list_two)):
+        return 0
+    else:
+        return list(set(list_one).symmetric_difference(set(list_two)))[0]
+```
+
 ### Data type Lab
 
 
